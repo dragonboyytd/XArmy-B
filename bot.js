@@ -38,7 +38,7 @@ const client = new Discord.Client();
  
 client.on('message', message => {
 
-    if (message.content === "/mc") {
+    if (message.content === "xmc") {
                         if(!message.channel.guild) return message.reply(' هذا الامر فقط للسيرفرات !!');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' ليس لديك صلاحيات');
@@ -49,7 +49,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' لي
                message.reply("تم تقفيل الشات ✅ ")
            });
              }
-if (message.content === "/umc") {
+if (message.content === "xumc") {
     if(!message.channel.guild) return message.reply(' هذا الامر فقط للسيرفرات !!');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
@@ -88,7 +88,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 
 
 
-const adminprefix = "/";
+const adminprefix = "x";
 const devs = ['344487452200796160'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -215,7 +215,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '/help') {
+if (message.content === 'xhelp') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("**:globe_with_meridians: الأوامر العامه**","** **")
@@ -239,15 +239,15 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '/help') {
+if (message.content === 'xhelp') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("**:radioactive: أوامر الأداره**","** **")
-      .addField("**/bc  :mega:**","**لـ البرودكاست**")
-      .addField("**/clear :octagonal_sign:**","**لـ مسح الشات**")
-	  .addField("**/createcolors :cyclone:**","** لـ اضافة 110 لون**")
-      .addField("**/kick  :outbox_tray:**","**لـ طرد الأعضاء**")
-      .addField("**/ban  :no_entry:**","**لـ حظر الأعضاء**")
+      .addField("**xbc  :mega:**","**لـ البرودكاست**")
+      .addField("**xclear :octagonal_sign:**","**لـ مسح الشات**")
+	  .addField("**xcreatecolors :cyclone:**","** لـ اضافة 110 لون**")
+      .addField("**xkick  :outbox_tray:**","**لـ طرد الأعضاء**")
+      .addField("**xban  :no_entry:**","**لـ حظر الأعضاء**")
 .setColor('RANDOM')
   message.author.sendEmbed(embed);
     }
@@ -259,7 +259,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '/help') {
+if (message.content === 'xhelp') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("** 🎶 اوامر الميوزك**","** **")
@@ -278,7 +278,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '/help') {
+if (message.content === 'xhelp') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("** مبرمج البوت :wrench: **","**@!DragonBoy_YTD#1431 **")
@@ -307,7 +307,7 @@ if (message.author.bot) return;
 
 
 client.on("message", message => {
-    var prefix = "/";
+    var prefix = "x";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -338,7 +338,7 @@ client.on('ready',  () => {
 
 
     client.on('message', message => {
-     if (message.content === "/id") {
+     if (message.content === "xid") {
      let embed = new Discord.RichEmbed()
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
@@ -368,7 +368,7 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-if (message.content === "/help") {
+if (message.content === "xhelp") {
 message.reply("**Done | تــم**")
 message.reply("**تم ارسال اوامر البوت في الخاص**")
 message.react("📩")
@@ -376,7 +376,7 @@ message.react("📩")
 }
 });
 client.on('message', message => {
-     if (message.content === "/bot") {
+     if (message.content === "xbot") {
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField("**Servers:**" , client.guilds.size)
@@ -468,7 +468,7 @@ client.on('message', message => {
 
 
 client.on('message',message =>{
-    var prefix = "/";
+    var prefix = "x";
     if(message.content.startsWith(prefix + 'top')) {
   message.guild.fetchInvites().then(i =>{
   var invites = [];
@@ -569,7 +569,7 @@ client.on('message', message => {
 client.on('message', msg => {
     if(msg.author.bot) return;
     
-    if(msg.content === '/sr') {
+    if(msg.content === 'xsr') {
       client.guilds.forEach(g => {
         
         let l = g.id
